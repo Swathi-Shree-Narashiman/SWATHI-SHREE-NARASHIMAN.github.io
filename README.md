@@ -58,6 +58,7 @@ I am a third-year undergraduate student at the **Indian Institute of Technology,
 
 - [Research Projects](research.md)  
 - [Positions of Responsibility](positions.md)
+- [publications](publications.md)
 
 ---
 
