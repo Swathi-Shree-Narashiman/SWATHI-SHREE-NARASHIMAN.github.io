@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Build site
+      - name: Prepare site
         run: |
           mkdir -p public
           cp README.md public/index.md
@@ -34,4 +34,3 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
-
