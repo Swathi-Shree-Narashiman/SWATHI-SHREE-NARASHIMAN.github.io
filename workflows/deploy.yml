@@ -13,21 +13,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - name: Install dependencies
-        run: npm install
-
       - name: Build site
-        run: npm run build
+        run: |
+          mkdir -p public
+          cp README.md public/index.md
+          cp my_picture.jpg public/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: ./public
 
   deploy:
     needs: build
@@ -39,3 +34,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
+
