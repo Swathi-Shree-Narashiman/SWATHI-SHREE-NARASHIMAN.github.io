@@ -1,6 +1,6 @@
 # Swathi Shree Narashiman
 
-![Swathi's Picture](images/my_picture.jpg)
+![Swathi's Picture](my_picture.jpg)
 
 ---
 
